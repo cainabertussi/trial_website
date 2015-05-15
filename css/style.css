@@ -1,0 +1,181 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+header{
+	/*vh - viewport height - percentage of the avalible browser window*/
+	height: 100vh;
+	background-image: url(../images/mountain.jpg);
+	/*so it stays in the centre*/
+	background-position: center;
+	/*so it doesnt repeat*/
+	background-repeat: no-repeat;
+	/*so it streach over the page*/
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+body{
+	font-family: 'Lato', sans-serif;
+	color: #24292d;
+	line-height: 1.6;
+	text-align: center;
+
+}
+
+header h1 {
+	text-align: center;
+	position:absolute;
+	top:50%;
+	left:50%;
+	/*You can use negative margin in combination with absolutr positioning to correct the offset from position things based on rhe top left corner*/
+	/*IE way of doing this margin: -132px 0 0 -250px;*/
+	/*new better way scale, rotate, move*/
+	/*the values inside of transform are relative to the item it is transforming 
+	- moves up by half the height of the image and moves left by half of the width of the image*/
+	transform: translate(-50%,-50%);
+}
+
+h1, h2, h3{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 25px;
+	color: #24292d;
+}
+
+p {
+	font-weight: 300px;
+	font-size: 15px;
+	padding: 15px 0;
+
+}
+
+.arrow{
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+.content{
+	text-align: center;
+	max-width: 720px;
+	margin:100px auto 100px auto;
+
+}
+.content img{
+	/*anything that is display block will no longer 
+	be centred by text-align center because only things that display:inline get centred by text-align centre*/
+	display: block;
+	margin: 30px auto;
+
+}
+
+.contentintro {
+	background-color: #e0e3e6;
+	width: 100%;
+	height: 625px;
+	padding-top: 25px;
+}
+
+.contentintro img{
+	padding: 25px 0 0 0;
+}
+
+.filters{
+	text-align: center;
+	background: #ffffff;
+	height: 900px;
+	padding: 65px 250px 0 250px;
+
+}
+.full-height{
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	/*when set to position relatibe - works exactly like normal except anything inside of this that has position absolute with position 
+	based on this and not the browser window.*/
+	position: relative;
+}
+ .arrowgreen{
+ 	padding: 25px 0 25px 0;
+ }
+
+
+.bluelagoon{
+	background-image: url(../images/blue-lagoon.jpg);
+	}
+
+.pool{
+	background-image: url(../images/pool.jpg);
+	}
+
+.forest{
+	background-image: url(../images/forest.jpg);
+	}
+
+.boat{
+	background-image: url(../images/boat.jpg);
+	}
+
+.river{
+	background-image: url(../images/river.jpg);
+	
+}
+
+h3{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align center;
+	color: #fff;
+	font-weight: 300;
+
+}
+
+
+.contact{
+	padding:60px 0 0 0;
+	text-align: center;
+	background-color: #f3f4f5;
+	}
+
+/*Hidden on the page but screen readings/seo still sees it*/
+label{
+	display: none;
+
+}
+
+input{
+	margin: 20px 0 20px 0;
+	padding: 15px;
+	width: 50%;
+	border: solid 2px #24292d;
+	background-color: #fff;
+	outline: none;
+	transition: all 0.8s;
+}
+/*Could also be hover - to hover and focus when you are typing*/
+
+input:focus{
+	border-color:#16B898;
+
+}
+
+
+footer{
+	background-color: #e0e3e6;
+	font-weight: 10px;
+	height: 75px
+
+
+}
+
+
+
+
+
+
+
+
